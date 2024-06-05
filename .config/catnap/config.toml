@@ -25,7 +25,7 @@ colors   = {icon = " ", name = "colors", color = "!DT!", symbol = ""}
 ##               Misc Config                ##
 ##############################################
 [misc]
-borderstyle = "dotted" #[line (The default border style.), dashed, dotted, noborder, doubleline]
+borderstyle = "doubleline" #[line (The default border style.), dashed, dotted, noborder, doubleline]
 layout = "Inline" # [Inline, ArtOnTop, StatsOnTop]
 
 [misc.figletLogos]

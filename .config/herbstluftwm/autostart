@@ -21,7 +21,7 @@ Mod=Mod4 # Use the super key as the main modifier
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
-hc keybind $Mod-Return spawn "${TERMINAL:-xterm}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-Return spawn "kitty" # use your $TERMINAL with xterm as fallback
 
 # basic movement in tiling and floating mode
 # focusing clients
@@ -77,8 +77,8 @@ for i in "${!tag_names[@]}"; do
 done
 
 # cycle through tags
-hc keybind $Mod-period use_index +1 --skip-visible
-hc keybind $Mod-comma use_index -1 --skip-visible
+hc keybind $Mod-] use_index +1 --skip-visible
+hc keybind $Mod-[ use_index -1 --skip-visible
 
 # layouting
 hc keybind $Mod-r remove
