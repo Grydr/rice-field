@@ -25,6 +25,7 @@ colors   = {icon = " ", name = "colors", color = "!DT!", symbol = ""}
 ##               Misc Config                ##
 ##############################################
 [misc]
+borderstyle = "dotted" #[line (The default border style.), dashed, dotted, noborder, doubleline]
 layout = "Inline" # [Inline, ArtOnTop, StatsOnTop]
 
 [misc.figletLogos]
@@ -35,6 +36,6 @@ margin = [0, 0, 0,]
 
 [misc.imageMode]
 enable = true
-path = "/home/gryd/.config/catnip/kanagawa_wave_500.png"
+path = "/home/gryd/.config/catnap/kanagawa_wave_500.png"
 scale = 27
 margin = [-1, 2, 1,]
