@@ -9,7 +9,7 @@ else
 	scrot $wallLock
 fi
 
-convert $wallLock -blur 0x6 $wallBlur
+magick $wallLock -blur 0x6 $wallBlur
 i3lock \
 	--image=$wallBlur \
 	--clock \
