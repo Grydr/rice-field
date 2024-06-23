@@ -23,12 +23,12 @@ bold_italic_font auto
 #:     italic_font      Operator Mono Book Italic
 #:     bold_italic_font Operator Mono Medium Italic
 
-font_size 12
+font_size 12.5
 
 #: Font size (in pts)
 
 adjust_line_height  98%
-# adjust_column_width 0
+adjust_column_width 0
 
 #: Change the size of each character cell kitty renders. You can use
 #: either numbers, which are interpreted as pixels or percentages
@@ -329,7 +329,7 @@ window_border_width 10
 #: that setting a non-zero window margin overrides this and causes all
 #: borders to be drawn.
 
-# window_margin_width 0.0
+# window_margin_width 3.0
 
 #: The window margin (in pts) (blank area outside the border)
 
@@ -339,7 +339,7 @@ window_border_width 10
 #: visible. Negative values will cause the value of
 #: window_margin_width to be used instead.
 
-# window_padding_width 1.0
+ window_padding_width 0
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border)
@@ -468,7 +468,8 @@ inactive_tab_font_style bold
 # background #1a1b26
 
 #: The foreground and background colors
-background_opacity 0.95
+#background_opacity 0.95
+background_opacity 1
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -1098,6 +1099,6 @@ map alt+[ previous_window
 
 
 # BEGIN_KITTY_THEME
-# Kanagawa
+# Sea Shells
 include current-theme.conf
 # END_KITTY_THEME
