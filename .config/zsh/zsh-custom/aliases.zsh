@@ -5,6 +5,7 @@ alias vrc='${EDITOR} ${HOME}/.config/nvim'
 alias sxhkdrc='${EDITOR} ${HOME}/.config/sxhkd/sxhkdrc'
 alias bspwmrc='${EDITOR} ${HOME}/.config/bspwm/bspwmrc'
 alias zimrc='${EDITOR} ${XDG_CONFIG_HOME}/zim/zimrc'
+alias spectrconf='${EDITOR} ${XDG_CONFIG_HOME}/spectrwm/spectrwm.conf'
 
 alias ls='eza --icons=always' 
 alias la='ls -a'
@@ -27,7 +28,6 @@ alias hx='helix'
 alias v='nvim'
 alias code='vscodium'
 alias bt='bluetoothctl'
-alias sysupdate='pikaur -Syu'
 
 eval $(thefuck --alias)
 # you can use whatever you want as an alias, like for Mondays:
