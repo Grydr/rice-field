@@ -1,0 +1,2 @@
+if (( ${+ZIM_HOME} )) zimfw() { source "${HOME}/.config/zim/zim/zimfw.zsh" "${@}" }
+fpath=("${HOME}/.config/zim/zim/modules/zsh-completions/src" ${fpath})
