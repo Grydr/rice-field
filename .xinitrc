@@ -36,12 +36,13 @@ fi
 
 xset s 600 dpms 900 900 900 &
 xsetroot -cursor_name left_ptr &
-usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 pipewire &
-pipewire-pulse &
-wireplumber &
+#pipewire-pulse &
+#wireplumber &
 #dunst &
 #dex -a &
 #sh /home/gryd/.local/bin/xidlehook_monitor.sh &
 #picom -b --config $HOME/.config/picom-ftlabs/picom.conf &
+nitrogen --restore &
 exec dbus-launch $@
