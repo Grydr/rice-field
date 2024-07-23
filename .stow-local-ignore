@@ -22,4 +22,4 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-/.local/bin/lock.sh
+#/.local/bin/lock.sh

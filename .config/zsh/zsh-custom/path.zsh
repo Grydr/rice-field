@@ -1,5 +1,6 @@
 export ZIM_CONFIG_FILE=$HOME/.config/zim/zimrc
 export XDG_DATA_HOME=$HOME/.local/share
+#export XDG_DATA_DIRS=/var/lib/flatpak/exports/share
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export EDITOR='nvim'

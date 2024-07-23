@@ -40,9 +40,10 @@ xsetroot -cursor_name left_ptr &
 pipewire &
 #pipewire-pulse &
 #wireplumber &
-#dunst &
-#dex -a &
 #sh /home/gryd/.local/bin/xidlehook_monitor.sh &
-#picom -b --config $HOME/.config/picom-ftlabs/picom.conf &
+#/usr/local/bin/picom -b --config $HOME/.config/picom/picom.conf &
+/usr/local/bin/picom &
+dunst &
+dex -a &
 nitrogen --restore &
 exec dbus-launch $@
