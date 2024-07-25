@@ -12,7 +12,7 @@ pre)
    if [[ $i3Check != 0 ]]; then
       pkill i3lock
    fi
-   su $username -c "i3lock-fancy" &
-   sleep 2s
+   su $username -c "$userhome/.local/bin/i3locker" &
+   sleep 3s
    ;;
 esac

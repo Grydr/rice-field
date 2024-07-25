@@ -1,20 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 wallLock=/tmp/wall-lock.png
 wallBlur=/tmp/wall-blur.png
 if [[ -f $wallLock ]]; then
-	rm -f $wallLock
-	scrot $wallLock
+   rm -f $wallLock
+   scrot $wallLock
 else
-	scrot $wallLock
+   scrot $wallLock
 fi
 
 magick $wallLock -blur 0x6 $wallBlur
 i3lock \
-	--image=$wallBlur \
-	--clock \
-	--time-color=#ffffff \
-	--greeter-color=#ffffff \
-	--date-color=#ffffff
-#--greeter-text="Hello, gryd" \
-#--greeter-align=2
+   --image=$wallBlur \
+   --clock \
+   --time-color=#ffffff \
+   --greeter-color=#ffffff \
+   --date-color=#ffffff \
+   \
+   #--greeter-align=2 #--greeter-text="Hello, gryd" \
