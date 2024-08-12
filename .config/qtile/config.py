@@ -17,20 +17,26 @@ keys = [
     Key([mod], "k", lazy.layout.previous(), desc="Move window focus to prev window"),
     # Move windows between left/right columns or move up/down in current stack.
     # Moving out of range in Columns layout will create new column.
-    Key([mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "l", lazy.layout.shuffle_right(), desc="Move window to the right"),
+    Key(
+        [mod, "shift"], "h", lazy.layout.shuffle_left(), desc="Move window to the left"
+    ),
+    Key(
+        [mod, "shift"],
+        "l",
+        lazy.layout.shuffle_right(),
+        desc="Move window to the right",
+    ),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(), desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
+    Key([mod], "w", lazy.layout.bring_to_front(), desc="Bring window to front"),
     Key([mod, "control"], "h", lazy.layout.shrink_main(), desc="Shrink Master"),
     Key([mod, "control"], "l", lazy.layout.grow_main(), desc="Grow Master"),
     Key([mod, "control"], "j", lazy.layout.shrink(), desc="Shrink focused window"),
     Key([mod, "control"], "k", lazy.layout.grow(), desc="Grow focused window"),
     Key([mod], "n", lazy.layout.reset(), desc="Reset all window sizes"),
     Key([mod], "space", lazy.layout.swap_main(), desc="Swap windows with main"),
-    
-
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
@@ -51,26 +57,69 @@ keys = [
         lazy.window.toggle_fullscreen(),
         desc="Toggle fullscreen on the focused window",
     ),
-    Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
+    Key(
+        [mod],
+        "t",
+        lazy.window.toggle_floating(),
+        desc="Toggle floating on the focused window",
+    ),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-
     # My Shortcut
     Key([mod], "p", lazy.spawn("rofi -show drun"), desc="Spawn rofi"),
-    Key(["shift"], "Print", lazy.spawn("flameshot full -p /home/gryd/Pictures/Screenshots"), desc="Screenshot screen fully"),
-    Key(["control", "shift"], "Print", lazy.spawn("/home/gryd/.local/bin/winshot.sh"), desc="Screenshot certain window"),
+    Key(
+        ["shift"],
+        "Print",
+        lazy.spawn("flameshot full -p /home/gryd/Pictures/Screenshots"),
+        desc="Screenshot screen fully",
+    ),
+    Key(
+        ["control", "shift"],
+        "Print",
+        lazy.spawn("/home/gryd/.local/bin/winshot.sh"),
+        desc="Screenshot certain window",
+    ),
     Key([], "Print", lazy.spawn("flameshot gui"), desc="Spawn flameshot gui"),
     Key([mod], "s", lazy.spawn("firefox"), desc="Spawn firefox"),
     # Brightness
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brillo -u 150000 -A 10"), desc="Increase brightness"),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brillo -u 150000 -U 10"), desc="Decrease brightness"),
+    Key(
+        [],
+        "XF86MonBrightnessUp",
+        lazy.spawn("brillo -u 150000 -A 10"),
+        desc="Increase brightness",
+    ),
+    Key(
+        [],
+        "XF86MonBrightnessDown",
+        lazy.spawn("brillo -u 150000 -U 10"),
+        desc="Decrease brightness",
+    ),
     # Volume
-    Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"), desc="Increase volume"),
-    Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"), desc="Decrease volume"),
-    Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"), desc="Mute audio"),
-    Key([], "XF86AudioMicMute", lazy.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle"), desc="Mute microphone"),
-    
+    Key(
+        [],
+        "XF86AudioRaiseVolume",
+        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%"),
+        desc="Increase volume",
+    ),
+    Key(
+        [],
+        "XF86AudioLowerVolume",
+        lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%"),
+        desc="Decrease volume",
+    ),
+    Key(
+        [],
+        "XF86AudioMute",
+        lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle"),
+        desc="Mute audio",
+    ),
+    Key(
+        [],
+        "XF86AudioMicMute",
+        lazy.spawn("pactl set-source-mute @DEFAULT_SOURCE@ toggle"),
+        desc="Mute microphone",
+    ),
 ]
 
 # Add key bindings to switch VTs in Wayland.
@@ -100,21 +149,25 @@ for i in groups:
                 desc="Switch to group {}".format(i.name),
             ),
             # mod + shift + group number = switch to & move focused window to group
-            #Key(
+            # Key(
             #    [mod, "shift"],
             #    i.name,
             #    lazy.window.togroup(i.name, switch_group=True),
             #    desc="Switch to & move focused window to group {}".format(i.name),
-            #),
+            # ),
             # Or, use below if you prefer not to switch to that group.
             # mod + shift + group number = move focused window to group
-             Key([mod, "shift"], i.name, lazy.window.togroup(i.name),
-                 desc="move focused window to group {}".format(i.name)),
+            Key(
+                [mod, "shift"],
+                i.name,
+                lazy.window.togroup(i.name),
+                desc="move focused window to group {}".format(i.name),
+            ),
         ]
     )
 
 layouts = [
-    #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     layout.MonadTall(),
     layout.MonadThreeCol(),
     layout.Max(),
@@ -171,15 +224,22 @@ screens = [
 
 # Drag floating layouts.
 mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Drag(
+        [mod],
+        "Button1",
+        lazy.window.set_position_floating(),
+        start=lazy.window.get_position(),
+    ),
+    Drag(
+        [mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()
+    ),
     Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
 follow_mouse_focus = False
-bring_front_click = True
+bring_front_click = "floating_only"
 floats_kept_above = True
 cursor_warp = False
 floating_layout = layout.Floating(
@@ -198,7 +258,10 @@ floating_layout = layout.Floating(
         Match(wm_class="blueman-manager"),
         Match(wm_class="Gufw.py"),
         Match(wm_class="Arandr"),
-        #Match(wm_class="guvcview"),
+        Match(wm_class="Thunar"),
+        Match(wm_class="qimgv"),
+        Match(wm_class="feh"),
+        # Match(wm_class="guvcview"),
     ]
 )
 auto_fullscreen = True

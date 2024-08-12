@@ -23,3 +23,4 @@ _darcs
 ^/COPYING
 
 #/.local/bin/lock.sh
+/void_packages.txt

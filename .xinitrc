@@ -36,12 +36,11 @@ fi
 
 xset s 600 dpms 900 900 900 &
 #xsetroot -cursor_name left_ptr &
-/usr/libexec/polkit-gnome-authentication-agent-1 &
+/usr/libexec/polkit-mate-authentication-agent-1 &
 pipewire &
 #pipewire-pulse &
 #wireplumber &
 #sh /home/gryd/.local/bin/xidlehook_monitor.sh &
-#/usr/local/bin/picom -b --config $HOME/.config/picom/picom.conf &
 /usr/local/bin/picom &
 dunst &
 dex -a &

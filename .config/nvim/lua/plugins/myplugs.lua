@@ -2,9 +2,7 @@ package.path = "/home/gryd/.config/nvim/lua/config/?.lua"
 
 return {
    require("custom.colorscheme"),
-   {
-      "rebelot/kanagawa.nvim",
-   },
+   { "ellisonleao/gruvbox.nvim", config = true },
    {
       "norcalli/nvim-colorizer.lua",
    },
@@ -20,6 +18,8 @@ return {
             "google-java-format",
             "java-debug-adapter",
             "java-test",
+            "markdownlint-cli2",
+            "markdown-toc",
          },
       },
    },
@@ -75,10 +75,10 @@ return {
       },
       opts = {},
    },
-   {
-      "folke/tokyonight.nvim",
-      enabled = false,
-   },
+   --{
+   --   "folke/tokyonight.nvim",
+   --   enabled = false,
+   --},
    {
       "stevearc/conform.nvim",
       opts = {
@@ -88,5 +88,13 @@ return {
             java = { "astyle" },
          },
       },
+   },
+   {
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+   },
+   {
+      "MeanderingProgrammer/markdown.nvim",
+      file_types = { "markdown", "norg", "rmd", "org" },
    },
 }
