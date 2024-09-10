@@ -14,12 +14,6 @@ return {
             "shellcheck",
             "shfmt",
             "lua-language-server",
-            "jdtls",
-            "google-java-format",
-            "java-debug-adapter",
-            "java-test",
-            "markdownlint-cli2",
-            "markdown-toc",
          },
       },
    },
@@ -30,7 +24,6 @@ return {
          vim.list_extend(opts.ensure_installed, {
             "tsx",
             "typescript",
-            "java",
          })
       end,
    },
@@ -53,6 +46,7 @@ return {
             lua = { "stylua" },
             sh = { "shfmt" },
             java = { "astyle" },
+            c = { "clang-format" },
          },
       },
    },
