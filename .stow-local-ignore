@@ -24,3 +24,4 @@ _darcs
 
 #/.local/bin/lock.sh
 /void_packages.txt
+/.config/starship.toml.kanagawa

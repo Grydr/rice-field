@@ -26,7 +26,6 @@ alias spotx-uninstall='sh ${HOME}/Builds/spotx/uninstall.sh'
 
 alias hx='helix'
 alias v='nvim'
-alias code='vscodium'
 alias bt='bluetoothctl'
 
 eval $(thefuck --alias)
