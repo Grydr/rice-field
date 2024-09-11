@@ -13,3 +13,4 @@ source "${HOME}/.config/zim/zim/modules/zsh-history-substring-search/zsh-history
 source "${HOME}/.config/zim/zim/modules/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "${HOME}/.config/zim/zim/modules/zsh-nvm/zsh-nvm.plugin.zsh"
 source "${HOME}/.config/zim/zim/modules/fzf-tab/fzf-tab.zsh"
+source "${HOME}/.config/zim/zim/modules/ohmyzsh/plugins/sudo/sudo.plugin.zsh"
