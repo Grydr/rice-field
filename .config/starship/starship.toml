@@ -1,4 +1,6 @@
 command_timeout = 1000
+"$schema" = 'https://starship.rs/config-schema.json'
+
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'

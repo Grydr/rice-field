@@ -15,4 +15,5 @@ export PATH=$HOME/.local/bin:$PATH
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
