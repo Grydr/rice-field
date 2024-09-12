@@ -1,1 +1,0 @@
-bin/i3Check.sh

@@ -1,1 +1,0 @@
-bin/winshot.sh
