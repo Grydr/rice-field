@@ -14,6 +14,7 @@ return {
             "shellcheck",
             "shfmt",
             "lua-language-server",
+            "clangd",
          },
       },
    },
