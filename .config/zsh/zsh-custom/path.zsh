@@ -12,6 +12,9 @@ export RANGER_LOAD_DEFAULT_RC=false
 export PATH=/usr/local/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
+# to support running gazebo & rviz2 on wayland 
+export QT_QPA_PLATFORM=xcb
+
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 
