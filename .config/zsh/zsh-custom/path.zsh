@@ -6,6 +6,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export EDITOR='nvim'
 export RANGER_LOAD_DEFAULT_RC=false
+export TMUX_TMPDIR=/var/tmp
 
 
 # export PATH=/usr/bin:$PATH

@@ -6,6 +6,7 @@ local o = vim.opt
 o.cursorline = true
 o.number = true
 o.relativenumber = true
+o.scrolloff = 999
 
 o.tabstop = 3
 o.shiftwidth = 3
