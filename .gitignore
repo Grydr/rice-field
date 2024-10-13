@@ -1,3 +1,5 @@
 /.config/zim/zim/modules
 /.config/nvim/lazy-lock.json
 /.config/qtile/__pycache__/*
+/.config/btop/btop.log
+/.config/zim/zim/.latest_version
