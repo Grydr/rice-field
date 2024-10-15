@@ -41,7 +41,7 @@ font   = "slant"
 margin = [0, 0, 0,]
 
 [misc.imageMode] # Requires Viu.
-enable = true
+enable = false
 path   = "/home/gryd/.config/catnap/bocchi-icon.png" # Please only use absolute paths.
 scale  = 18
 margin = [2, 2, 3,]
