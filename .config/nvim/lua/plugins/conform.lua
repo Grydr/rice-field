@@ -5,7 +5,7 @@ return {
          formatters_by_ft = {
             lua = { "stylua" },
             sh = { "shfmt" },
-            java = { "astyle" },
+            java = { "clang-format" },
             c = { "clang-format" },
          },
       },
