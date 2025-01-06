@@ -1,13 +1,12 @@
-export ZIM_CONFIG_FILE=$HOME/.config/zim/zimrc
+# export ZIM_CONFIG_FILE=$HOME/.config/zim/zimrc
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_DATA_DIRS="/home/gryd/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 export EDITOR='nvim'
-export RANGER_LOAD_DEFAULT_RC=false
+# export RANGER_LOAD_DEFAULT_RC=false
 export TMUX_TMPDIR=/var/tmp
-
 
 # export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH

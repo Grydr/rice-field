@@ -18,4 +18,6 @@ source ~/.local/share/blesh/ble.sh
 source /opt/ros/humble/setup.bash
 source ~/Project/ros2-ws/install/setup.bash
 
+export IGN_GAZEBO_RESOURCE_PATH=$IGN_GAZEBO_RESOURCE_PATH:/home/gryd/Project/ros2_ws_sauvc_2025/src/ROS2_WS_SAUVC_2025/banyu_simulation/models
+export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=$IGN_GAZEBO_SYSTEM_PLUGIN_PATH:/home/gryd/Project/ros2_ws_sauvc_2025/install/banyu_simulation/lib/banyu_simulation
 # neofetch

@@ -29,8 +29,5 @@ alias hx='helix'
 alias v='nvim'
 alias bt='bluetoothctl'
 
-eval $(thefuck --alias)
-# you can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias fuck)
-
 unalias l
+unalias z 2> /dev/null

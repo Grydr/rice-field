@@ -140,12 +140,20 @@ export XDG_STATE_HOME=$HOME/.local/state
 
 source ${XDG_CONFIG_HOME}/zsh/myzsh.sh
 
+eval $(thefuck --alias)
+# you can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias fuck)
+
 eval "$(starship init zsh)"
 #eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/omp.toml)"
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
+eval "$(fzf --zsh)s"
 eval "$(zoxide init zsh)"
 
-tmux source ~/.config/tmux/tmux.conf
+# Check if tmux server is running
+if [[ $(pgrep -c tmux) != 0 ]]; then
+   # echo "Sourcing tmux config"
+   tmux source ~/.config/tmux/tmux.conf
+fi
 
 catnap
