@@ -59,6 +59,6 @@ zmodule zsh-users/zsh-autosuggestions
 #
 
 # zmodule lukechilds/zsh-nvm
-# zmodule Aloxaf/fzf-tab
+zmodule Aloxaf/fzf-tab
 
 zmodule ohmyzsh/ohmyzsh --root plugins/sudo 

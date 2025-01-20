@@ -145,9 +145,11 @@ eval $(thefuck --alias)
 eval $(thefuck --alias fuck)
 
 eval "$(starship init zsh)"
-#eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/omp.toml)"
+
 # Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)s"
+eval "$(fzf --zsh)"
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+
 eval "$(zoxide init zsh)"
 
 # Check if tmux server is running
