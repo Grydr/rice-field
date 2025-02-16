@@ -4,6 +4,7 @@
 .config/btop/btop.log
 /.config/zim/zim/.latest_version
 /.local/bin/gazebo
+/.local/bin/tldr
 
 # Python pip bin ignore
 /.local/bin/backend-test-tools

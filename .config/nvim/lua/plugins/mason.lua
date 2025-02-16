@@ -4,7 +4,6 @@ return {
       opts = {
          ensure_installed = {
             "stylua",
-            "shellcheck",
             "shfmt",
             "lua-language-server",
             "clangd",

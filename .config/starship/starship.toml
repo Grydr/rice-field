@@ -65,6 +65,7 @@ error_symbol = "[[󰄛](red) ❯](peach)"
 vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
 [directory]
+format = '\[[$path]($style)[$read_only]($read_only_style)\]'
 truncation_length = 4
 style = "bold lavender"
 
