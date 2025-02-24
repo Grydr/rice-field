@@ -5,6 +5,7 @@ export QT_QPA_PLATFORM=xcb
 export XDG_RUNTIME_DIR=/run/user/1000
 export IGN_GAZEBO_RESOURCE_PATH=$IGN_GAZEBO_RESOURCE_PATH:/home/gryd/Project/ros2_ws_sauvc_2025/src/ROS2_WS_SAUVC_2025/banyu_simulation/models
 export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=$IGN_GAZEBO_SYSTEM_PLUGIN_PATH:/home/gryd/Project/ros2_ws_sauvc_2025/install/banyu_simulation/lib/banyu_simulation
+export PATH=$HOME/.local/bin:$PATH
 
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \

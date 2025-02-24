@@ -19,4 +19,4 @@ o.cindent = true
 
 o.termguicolors = true
 
--- vim.g.autoformat = false
+vim.g.autoformat = false
