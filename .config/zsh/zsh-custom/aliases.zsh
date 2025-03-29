@@ -26,7 +26,7 @@ alias spotx-uninstall='sh ${HOME}/Builds/spotx/uninstall.sh'
 alias flatcode='flatpak run com.visualstudio.code'
 
 alias hx='helix'
-alias v='nvim'
+alias nv='nvim'
 alias bt='bluetoothctl'
 
 unalias l

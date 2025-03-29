@@ -8,11 +8,10 @@ o.number = true
 o.relativenumber = true
 o.scrolloff = 999
 
-o.tabstop = 3
-o.shiftwidth = 3
+o.tabstop = 4
+o.shiftwidth = 4
 o.smarttab = true
 o.expandtab = true
-o.softtabstop = 3
 o.smartindent = true
 o.autoindent = true
 o.cindent = true

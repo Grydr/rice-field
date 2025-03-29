@@ -131,8 +131,8 @@ unset key
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=3000
+SAVEHIST=3000
 # End of lines configured by zsh-newuser-install
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CONFIG_HOME=$HOME/.config
