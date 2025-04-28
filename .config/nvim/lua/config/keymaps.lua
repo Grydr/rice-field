@@ -5,3 +5,4 @@ local map = vim.keymap.set
 
 map("i", "jk", "<ESC>")
 map("n", ";", ":")
+map("x", "p", function() return 'pgv"' .. vim.v.register .. "y" end, { remap = false, expr = true })
