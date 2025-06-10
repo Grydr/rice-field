@@ -5,6 +5,9 @@ vim.g.maplocalleader = " "
 -- keymaps for quick netrw access (probably will use another plugin)
 -- vim.keymap.set('n', '<leader>cd', vim.cmd.Ex)
 
+-- open new empty buffer
+vim.keymap.set("n", "<leader><S-n>", ":enew<CR>", { desc = "Open new empty buffer" })
+
 -- use 'jk' to exit insert mode
 vim.keymap.set("i", "jk", "<ESC>")
 
@@ -32,7 +35,7 @@ vim.keymap.set("v", "<", "<gv", { noremap = true, silent = true })
 
 -- dont overwrite yank buffer after pasting
 vim.keymap.set("x", "p", function()
-    return 'pgv"' .. vim.v.register .. "y"
+	return 'pgv"' .. vim.v.register .. "y"
 end, { remap = false, expr = true })
 
 -- Keybinds to make split navigation easier.
