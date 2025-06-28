@@ -6,6 +6,7 @@
 /.local/bin/gazebo
 /.local/bin/tldr
 /.local/bin/bat
+/.local/bin/bcc
 
 # Python pip bin ignore
 /.local/bin/backend-test-tools
