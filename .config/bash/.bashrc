@@ -3,7 +3,7 @@ shopt -s extglob
 
 export QT_QPA_PLATFORM=xcb
 export XDG_RUNTIME_DIR=/run/user/1000
-export IGN_GAZEBO_RESOURCE_PATH=$HOME/Project/ros2_ws_krbai_2025/src/banyu_simulation/ROS2_WS_KRBAI_2025/banyu_gazebo_fortress/models:$IGN_GAZEBO_RESOURCE_PATH
+export IGN_GAZEBO_RESOURCE_PATH=$HOME/Project/ros2_ws_krbai_2025/src/ROS2_WS_KRBAI_2025/banyu_simulation/banyu_gazebo_fortress/models:$IGN_GAZEBO_RESOURCE_PATH
 export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=$HOME/Project/ros2_ws_krbai_2025/install/banyu_gazebo_fortress/lib/banyu_gazebo_fortress:$IGN_GAZEBO_SYSTEM_PLUGIN_PATH
 # export IGN_GAZEBO_MODEL_PATH=
 export PATH=$HOME/.local/bin:$PATH
@@ -19,8 +19,7 @@ fi
 source /etc/profile.d/bash_completion.sh
 source ~/.local/share/blesh/ble.sh
 source /opt/ros/humble/setup.bash
-source ~/Project/ros2-ws/install/setup.bash
-source /usr/share/gazebo/setup.bash
+# source /usr/share/gazebo/setup.bash
 
 # eval "$(fzf --bash)"
 

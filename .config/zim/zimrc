@@ -58,7 +58,4 @@ zmodule zsh-users/zsh-autosuggestions
 # User configuration sourced by interactive shells
 #
 
-# zmodule lukechilds/zsh-nvm
-zmodule Aloxaf/fzf-tab
-
-zmodule ohmyzsh/ohmyzsh --root plugins/sudo 
+zmodule ohmyzsh/ohmyzsh --root plugins/sudo

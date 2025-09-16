@@ -6,6 +6,7 @@ alias vrc='${EDITOR} ${HOME}/.config/nvim'
 #alias bspwmrc='${EDITOR} ${HOME}/.config/bspwm/bspwmrc'
 alias zimrc='${EDITOR} ${XDG_CONFIG_HOME}/zim/zimrc'
 #alias spectrconf='${EDITOR} ${XDG_CONFIG_HOME}/spectrwm/spectrwm.conf'
+alias pkexec='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY'
 
 alias ls='eza --icons=always'
 alias la='ls -a'
@@ -31,6 +32,7 @@ alias spotx-uninstall='sh ${HOME}/Builds/spotx/uninstall.sh'
 alias hx='helix'
 alias nv='nvim'
 alias bt='bluetoothctl'
+alias lg='lazygit'
 
 unalias l
 unalias z 2> /dev/null

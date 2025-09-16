@@ -3,7 +3,7 @@
 	name = Grydr
 
 [credential]
-	helper = "!f() { /home/gryd/.vscode-server/bin/848b80aeb52026648a8ff9f7c45a9b0a80641e2e/node /tmp/vscode-remote-containers-9d20e267-5533-40ec-afe8-91f42575ea71.js git-credential-helper $*; }; f"
+	helper = "!f() { /home/gryd/.vscode-server/bin/f220831ea2d946c0dcb0f3eaa480eb435a2c1260/node /tmp/vscode-remote-containers-e0cf661c-2193-4061-be9c-599cb756c91c.js git-credential-helper $*; }; f"
 	; helper = "!f() { /home/gryd/.vscode-server/bin/91fa95bccb027ece6a968589bb1d662fa9c8e170/node /tmp/vscode-remote-containers-ad4d75f9-6823-44ab-8b78-11af810027af.js git-credential-helper $*; }; f"
 
 [color]
@@ -30,4 +30,4 @@
     colorMoved = default
 
 [init]
-	defaultBranch = master
+	defaultBranch = main
