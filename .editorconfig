@@ -18,5 +18,5 @@ indent_size = 2
 [*.js]
 indent_size = 4
 
-[*.{html,css,json}]
+[*.{html,css,json,tsx}]
 indent_size = 2

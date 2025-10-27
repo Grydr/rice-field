@@ -3,7 +3,7 @@
 	name = Grydr
 
 [credential]
-	helper = "!f() { /home/gryd/.vscode-server/bin/f220831ea2d946c0dcb0f3eaa480eb435a2c1260/node /tmp/vscode-remote-containers-e0cf661c-2193-4061-be9c-599cb756c91c.js git-credential-helper $*; }; f"
+	helper = "!f() { /home/gryd/.vscode-server/bin/7d842fb85a0275a4a8e4d7e040d2625abbf7f084/node /tmp/vscode-remote-containers-56ee58d4-8ad3-431f-8c97-dd5196cce97d.js git-credential-helper $*; }; f"
 	; helper = "!f() { /home/gryd/.vscode-server/bin/91fa95bccb027ece6a968589bb1d662fa9c8e170/node /tmp/vscode-remote-containers-ad4d75f9-6823-44ab-8b78-11af810027af.js git-credential-helper $*; }; f"
 
 [color]

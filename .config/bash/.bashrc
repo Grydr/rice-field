@@ -15,9 +15,9 @@ export PATH=$HOME/.local/bin:$PATH
 if [ -f ~/.config/bash/sensible.bash ]; then 
 	source ~/.config/bash/sensible.bash
 fi
-
 source /etc/profile.d/bash_completion.sh
-source ~/.local/share/blesh/ble.sh
+
+source -- ~/.local/share/blesh/ble.sh
 source /opt/ros/humble/setup.bash
 # source /usr/share/gazebo/setup.bash
 
