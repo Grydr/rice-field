@@ -1,4 +1,5 @@
-*.sd.zip
+*.zip
+*.gz
 
 /.config/zim/zim/modules
 /.config/nvim/lazy-lock.json
