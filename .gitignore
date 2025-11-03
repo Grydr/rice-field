@@ -40,3 +40,4 @@
 /.local/bin/tqdm
 /.local/bin/ultralytics
 /.local/bin/yolo
+.config/tmux/plugins

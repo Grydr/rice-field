@@ -7,7 +7,7 @@ export XDG_STATE_HOME=$HOME/.local/state
 export WAYLAND_DISPLAY=wayland-0
 export XDG_RUNTIME_DIR=/run/user/1000
 export EDITOR='nvim'
-export TMUX_TMPDIR=/var/tmp
+# export TMUX_TMPDIR=/var/tmp
 
 export PATH=$HOME/.config/composer/vendor/bin:$PATH
 export PATH=/usr/local/bin:$PATH
