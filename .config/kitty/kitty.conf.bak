@@ -260,7 +260,7 @@ scrollback_lines 3000
 
 #: Terminal bell {{{
 
-# enable_audio_bell yes
+enable_audio_bell no
 
 #: Enable/disable the audio bell. Useful in environments that require
 #: silence.
@@ -289,9 +289,9 @@ scrollback_lines 3000
 
 #: Window layout {{{
 
-# remember_window_size  yes
-# initial_window_width  640
-# initial_window_height 400
+remember_window_size  no
+initial_window_width  1600
+initial_window_height 900
 
 #: If enabled, the window size will be remembered so that new
 #: instances of kitty will have the same size as the previous
@@ -315,14 +315,14 @@ enabled_layouts tall
 #: resizing windows. The cells value is used for horizontal resizing
 #: and the lines value for vertical resizing.
 
-window_border_width 1
+window_border_width 0
 
 #: The width (in pts) of window borders. Will be rounded to the
 #: nearest number of pixels based on screen resolution. Note that
 #: borders are displayed only when more than one window is visible.
 #: They are meant to separate multiple windows.
 
- draw_minimal_borders yes
+ draw_minimal_borders no
 
 #: Draw only the minimum borders needed. This means that only the
 #: minimum needed borders for inactive windows are drawn. That is only
@@ -340,7 +340,7 @@ window_border_width 1
 #: visible. Negative values will cause the value of
 #: window_margin_width to be used instead.
 
- window_padding_width 0
+ window_padding_width 5
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border)
@@ -467,10 +467,19 @@ inactive_tab_font_style bold
 #: Color scheme {{{
 # foreground #a9b1d6
 # background #1a1b26
+background grey
 
 #: The foreground and background colors
-#background_opacity 0.7
-background_opacity 1
+background_opacity 0.8
+# background_opacity 1
+
+# background_image looking-for.png
+background_image none
+background_image_layout cscaled
+background_image_linear yes
+background_tint 0.8
+
+background_blur 30
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -558,7 +567,7 @@ background_opacity 1
 #: --login to ensure that the shell starts in interactive mode and
 #: reads its startup rc files.
 
-editor .
+editor nvim
 shell_integration no-cursor
 
 #: The console editor to use when editing the kitty config file or
@@ -590,7 +599,7 @@ shell_integration no-cursor
 #: you want to prevent programs running on a remote computer over ssh
 #: from controlling kitty.
 
-# env 
+# env
 
 #: Specify environment variables to set in all child processes. Note
 #: that environment variables are expanded recursively, so if you
@@ -1100,6 +1109,6 @@ map kitty_mod+enter new_window_with_cwd
 
 
 # BEGIN_KITTY_THEME
-# Gruvbox Material Dark Soft
+# Gruvbox Material Dark Medium
 include current-theme.conf
 # END_KITTY_THEME

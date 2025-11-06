@@ -152,12 +152,13 @@ eval "$(fzf --zsh)"
 
 eval "$(zoxide init zsh)"
 
+eval "$(register-python-argcomplete pipx)"
+
 # Check if tmux server is running
 if [[ $(pgrep -c tmux) != 0 ]]; then
-   # echo "Sourcing tmux config"
    tmux source ~/.config/tmux/tmux.conf
-# else
-#    tmux new
+else
+   tmux new
 fi
 
 catnap

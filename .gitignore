@@ -6,6 +6,7 @@
 /.config/qtile/__pycache__/*
 .config/btop/btop.log
 /.config/zim/zim/.latest_version
+/.local/bin/*
 /.local/bin/gazebo
 /.local/bin/tldr
 /.local/bin/bat
