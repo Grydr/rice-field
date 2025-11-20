@@ -82,6 +82,8 @@ format = '\[[$symbol($version(-$name))]($style)\]'
 format = '\[[$symbol($version)]($style)\]'
 
 [cmd_duration]
+min_time = 10
+show_milliseconds = true
 format = '\[[⏱ $duration]($style)\]'
 
 [cobol]
