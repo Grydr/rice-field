@@ -139,10 +139,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 export XDG_STATE_HOME=$HOME/.local/state
 
 source ${XDG_CONFIG_HOME}/zsh/myzsh.sh
-
-eval $(thefuck --alias)
-# you can use whatever you want as an alias, like for Mondays:
-eval $(thefuck --alias fuck)
+source /usr/share/nvm/init-nvm.sh
 
 eval "$(starship init zsh)"
 
@@ -152,7 +149,7 @@ eval "$(fzf --zsh)"
 
 eval "$(zoxide init zsh)"
 
-eval "$(register-python-argcomplete pipx)"
+# eval "$(register-python-argcomplete pipx)"
 
 # Check if tmux server is running
 if [[ $(pgrep -c tmux) != 0 ]]; then
