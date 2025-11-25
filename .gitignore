@@ -1,6 +1,8 @@
 *.zip
 *.gz
 
+/vscodium.code-profile
+
 /.config/zim/zim/modules
 /.config/nvim/lazy-lock.json
 /.config/qtile/__pycache__/*
