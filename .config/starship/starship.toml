@@ -12,6 +12,11 @@ style = "fg:#a4bbef"
 format = '\[[$path]($style)[$read_only]($read_only_style)\]'
 truncation_length = 4
 
+[cmd_duration]
+min_time = 10
+show_milliseconds = true
+format = '\[[⏱ $duration]($style)\]'
+
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
 
@@ -32,9 +37,6 @@ format = '\[[$symbol($version(-$name))]($style)\]'
 
 [cmake]
 format = '\[[$symbol($version)]($style)\]'
-
-[cmd_duration]
-format = '\[[⏱ $duration]($style)\]'
 
 [cobol]
 format = '\[[$symbol($version)]($style)\]'
