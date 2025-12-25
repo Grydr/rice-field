@@ -17,8 +17,8 @@ alias lah='ls -lah --links --inode'
 # alias cd='z'
 alias man='batman'
 
-alias gcc='gcc -Wall -Wextra -Wpedantic -Wshadow -Wcast-align -O2'
-alias g++='g++ -Wall -Wextra -Wpedantic -Wshadow -Wcast-align -O2'
+alias gcc='gcc -Wall -Wextra -Wpedantic -Wshadow -Wcast-align -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -fsanitize={address,undefined} -O2'
+alias g++='g++ -Wall -Wextra -Wpedantic -Wshadow -Wcast-align -Wconversion -Wunreachable-code -Wuninitialized -Winit-self -fsanitize={address,undefined} -O2'
 
 alias glog='git log --oneline --decorate --all --graph'
 
