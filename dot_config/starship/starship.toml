@@ -8,6 +8,7 @@ vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
 [directory]
 style = "fg:#a4bbef"
+# style = "fg:#e3e5e5"
 format = '\[[$path]($style)[$read_only]($read_only_style)\]'
 truncation_length = 4
 

@@ -18,8 +18,6 @@ export QT_QPA_PLATFORM=xcb
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 
-export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 export EDITOR='nvim'
