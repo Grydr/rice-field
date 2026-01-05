@@ -21,3 +21,5 @@ export NVM_COMPLETION=true
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 export EDITOR='nvim'
+
+export CMAKE_EXPORT_COMPILE_COMMANDS=1
