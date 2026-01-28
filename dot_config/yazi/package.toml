@@ -1,7 +1,5 @@
-[[plugin.deps]]
-use = "Reledia/glow"
-rev = "bd3eaa5"
-hash = "92b5c58159a51c567f82b618cee2b78"
+[plugin]
+deps = []
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"

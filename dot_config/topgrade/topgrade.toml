@@ -15,7 +15,7 @@ pre_sudo = true
 # sudo_command = "sudo"
 
 # Disable specific steps - same options as the command line flag
-disable = ["emacs", "git_repos", "chezmoi"]
+disable = ["emacs", "git_repos", "chezmoi", "vcpkg", "jetbrains_idea"]
 
 # Ignore failures for these steps
 # ignore_failures = ["powershell"]
@@ -88,8 +88,8 @@ disable = ["emacs", "git_repos", "chezmoi"]
 # Custom commands
 [commands]
 # "Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
+"vcpkg Update" = "git -C $VCPKG_ROOT pull"
 # "Custom command using interactive shell (unix)" = "-i vim_upgrade"
-
 
 [python]
 # enable_pip_review = true                         ###disabled by default
@@ -140,7 +140,7 @@ disable = ["emacs", "git_repos", "chezmoi"]
 # aura_pacman_arguments = ""
 # garuda_update_arguments = ""
 
-# show_arch_news = true
+show_arch_news = true
 
 # trizen_arguments = "--devel"
 
