@@ -32,3 +32,4 @@ alias srcbash="source ~/.bashrc"
 alias cls="clear"
 
 # neofetch
+source /home/gryd/Dev/ardupilot/Tools/completion/completion.bash

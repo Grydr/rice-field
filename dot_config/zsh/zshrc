@@ -138,20 +138,9 @@ HISTFILE=~/.histfile
 HISTSIZE=3000
 SAVEHIST=3000
 # End of lines configured by zsh-newuser-install
-export XDG_DATA_HOME=$HOME/.local/share
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_STATE_HOME=$HOME/.local/state
-
-source ${XDG_CONFIG_HOME}/zsh/myzsh.sh
-source /usr/share/nvm/init-nvm.sh
+source ~/.config/zsh/myzsh.sh
 
 eval "$(starship init zsh)"
-
-# Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
-# zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
-
-eval "$(zoxide init zsh)"
 
 # Check if tmux server is running
 if [[ $(pgrep -c tmux) != 0 ]]; then

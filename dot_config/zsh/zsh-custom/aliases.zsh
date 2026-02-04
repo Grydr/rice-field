@@ -14,7 +14,6 @@ alias lt='ls -T'
 alias lat='ls -aT'
 alias ll='ls -lh --links --inode'
 alias lah='ls -lah --links --inode'
-# alias cd='z'
 alias man='batman'
 
 alias gcc='gcc -Wall -Wextra -Wshadow -Wcast-align -Wconversion -Wuninitialized -Winit-self -fsanitize={address,undefined}'
@@ -31,6 +30,3 @@ alias hx='helix'
 alias nv='nvim'
 alias bt='bluetoothctl'
 alias lg='lazygit'
-
-unalias l
-unalias z 2> /dev/null
