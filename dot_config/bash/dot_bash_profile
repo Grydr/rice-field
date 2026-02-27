@@ -1,26 +1,5 @@
-export SHELL=$(which bash)
-export USER=$(id -un)
+#
+# ~/.bash_profile
+#
 
-export QT_QPA_PLATFORM=xcb
-export XDG_RUNTIME_DIR=/run/user/1000
-
-alias srcbash="source ~/.bash_profile"
-alias la="ls -a"
-alias ll="ls -l"
-alias lah="ls -lah"
-alias cls="clear"
-
-if [ -n "$BASH_VERSION" ]; then
-    bash_config_path="$HOME/.config/bash"
-    container_name=$CONTAINER_ID
-    if [[ -n $container_name ]]; then
-        if [[ $container_name == "banyu-ubuntu" ]]; then
-            source ${bash_config_path}/bashrc.banyu-ubuntu
-        else
-            source ${bash_config_path}/bashrc.default
-        fi
-        return 0
-    fi
-
-    source ${bash_config_path}/bashrc.default
-fi
+[[ -f ~/.bashrc ]] && . ~/.bashrc
