@@ -1,16 +1,20 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = '$all$status$line_break$character'
+
 [character]
 # Note the use of Catppuccin color 'peach'
-success_symbol = "[[󰄛](green) ❯](peach)"
-error_symbol = "[[󰄛](red) ❯](peach)"
+success_symbol = "[[󰄛 ❯](bold green)](peach)"
+error_symbol = "[[󰄛 ❯](bold red)](peach)"
 vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
 [directory]
 style = "fg:#a4bbef"
-# style = "fg:#e3e5e5"
 format = '\[[$path]($style)[$read_only]($read_only_style)\]'
-truncation_length = 4
+truncation_length = 0
+truncate_to_repo = false
+truncation_symbol = '../'
+fish_style_pwd_dir_length = 0
 
 [cmd_duration]
 min_time = 15
@@ -258,7 +262,9 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$environment]($style)\]'
 
 [status]
-format = '\[[$symbol$status]($style)\]'
+disabled = false
+format = '\[[$status]($style)\]'
+map_symbol = true
 
 [sudo]
 format = '\[[as $symbol]($style)\]'
