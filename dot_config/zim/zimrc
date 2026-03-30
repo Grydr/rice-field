@@ -44,6 +44,7 @@ zmodule completion
 #
 # Modules that must be initialized last
 #
+zmodule joke/zim-mise
 
 # Fish-like syntax highlighting for Zsh, must be sourced after completion.
 zmodule zsh-users/zsh-syntax-highlighting
@@ -56,5 +57,5 @@ zmodule zsh-users/zsh-autosuggestions
 
 zmodule ohmyzsh/ohmyzsh --root plugins/sudo
 zmodule kiesman99/zim-zoxide
-zmodule direnv
+zmodule exa
 zmodule fzf

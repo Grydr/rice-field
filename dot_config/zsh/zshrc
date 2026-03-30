@@ -135,18 +135,8 @@ unset key
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=3000
-SAVEHIST=3000
+HISTSIZE=30000
+SAVEHIST=30000
 # End of lines configured by zsh-newuser-install
-source ~/.config/zsh/myzsh.sh
 
-eval "$(starship init zsh)"
-
-# Check if tmux server is running
-if [[ $(pgrep -c tmux) != 0 ]]; then
-   tmux source ~/.config/tmux/tmux.conf
-else
-   tmux new
-fi
-
-catnap
+source ~/.config/zsh/myzsh.zsh

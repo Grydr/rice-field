@@ -8,12 +8,12 @@ export XDG_RUNTIME_DIR=/run/user/1000
 export WAYLAND_DISPLAY=wayland-0
 export TMUX_TMPDIR=/var/tmp
 export GTK_USE_PORTAL=1
-# to support running gazebo & rviz2 on wayland
-export QT_QPA_PLATFORM=xcb
 
-export PATH=$HOME/.config/composer/vendor/bin:$PATH
+# to support running gazebo & rviz2 on wayland
+export QT_QPA_PLATFORM="wayland;xcb"
+# export QT_QPA_PLATFORM=xcb
+
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.npm-packages/bin:$PATH
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
@@ -24,4 +24,4 @@ export EDITOR='nvim'
 
 export VCPKG_ROOT="$HOME/.local/share/vcpkg"
 
-export CMAKE_GENERATOR="Ninja"
+export GOPATH="$HOME/.local/share/go"

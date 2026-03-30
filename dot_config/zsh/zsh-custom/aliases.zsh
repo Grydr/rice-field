@@ -8,13 +8,14 @@ alias zimrc='${EDITOR} ${XDG_CONFIG_HOME}/zim/zimrc'
 alias spectrconf='${EDITOR} ${XDG_CONFIG_HOME}/spectrwm/spectrwm.conf'
 alias pkexec='pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY'
 
-alias ls='eza --icons=always --group'
-alias la='ls -a'
-alias lt='ls -T'
-alias lat='ls -aT'
-alias ll='ls -lh --links --inode'
-alias lah='ls -lah --links --inode'
-alias man='batman'
+if command -v eza >/dev/null; then
+    alias ls='eza --icons=always --smart-group --group-directories-first'
+    alias la='ls -a'
+    alias lt='ls -T'
+    alias lat='ls -aT'
+    alias ll='ls -lh --links --inode'
+    alias lah='ls -lah --links --inode'
+fi
 
 alias gcc='gcc -Wall -Wextra -Wshadow -Wcast-align -Wconversion -Wuninitialized -Winit-self -fsanitize={address,undefined}'
 alias g++='g++ -Wall -Wextra -Wshadow -Wcast-align -Wconversion -Wuninitialized -Winit-self -fsanitize={address,undefined}'
@@ -30,3 +31,6 @@ alias hx='helix'
 alias nv='nvim'
 alias bt='bluetoothctl'
 alias lg='lazygit'
+
+alias chmod='chmod --preserve-root'
+alias chown='chown --preserve-root'
