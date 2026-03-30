@@ -18,5 +18,8 @@ indent_size = 2
 [*.js]
 indent_size = 4
 
-[*.{html,css,json,tsx}]
+[*.{html,css,json,tsx,yaml,yml,toml}]
+indent_size = 2
+
+[*.dart]
 indent_size = 2
