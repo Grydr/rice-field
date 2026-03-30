@@ -1,4 +1,4 @@
-export SHELL=bash
+export SHELL=$(which bash)
 export USER=$(id -un)
 
 export QT_QPA_PLATFORM=xcb

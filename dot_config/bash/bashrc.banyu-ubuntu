@@ -3,6 +3,7 @@
 # export IGN_GAZEBO_MODEL_PATH=
 
 export EDITOR=vim
+# export PATH=$VCPKG_ROOT:$PATH
 
 # Use bash-completion, if available
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
@@ -24,6 +25,7 @@ source /opt/ros/humble/setup.bash
 # 	tmux source ~/.config/tmux/tmux.conf
 # fi
 
+source /home/gryd/.local/share/vcpkg/scripts/vcpkg_completion.bash
 source /home/gryd/Dev/ardupilot/Tools/completion/completion.bash
 
 source -- ~/.local/share/blesh/ble.sh
