@@ -13,7 +13,15 @@ export GTK_USE_PORTAL=1
 export QT_QPA_PLATFORM="wayland;xcb"
 # export QT_QPA_PLATFORM=xcb
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin
+
+if command -v flutter >/dev/null || command -v dart >/dev/null; then
+    export PATH=$PATH:$HOME/.pub-cache/bin
+fi
+
+if (( $+commands[fvm] )); then
+    export PATH=$PATH:"$HOME/.local/share/fvm/default/bin"
+fi
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
@@ -25,3 +33,5 @@ export EDITOR='nvim'
 export VCPKG_ROOT="$HOME/.local/share/vcpkg"
 
 export GOPATH="$HOME/.local/share/go"
+
+

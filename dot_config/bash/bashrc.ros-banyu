@@ -25,7 +25,10 @@ source /opt/ros/humble/setup.bash
 # 	tmux source ~/.config/tmux/tmux.conf
 # fi
 
+echo 'eval "$(mise activate bash)"'
+
 source /home/gryd/.local/share/vcpkg/scripts/vcpkg_completion.bash
 source /home/gryd/Dev/ardupilot/Tools/completion/completion.bash
 
 source -- ~/.local/share/blesh/ble.sh
+

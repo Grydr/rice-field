@@ -14,8 +14,8 @@ if [ -n "$BASH_VERSION" ]; then
     bash_config_path="$HOME/.config/bash"
     container_name=$CONTAINER_ID
     if [[ -n $container_name ]]; then
-        if [[ $container_name == "banyu-ubuntu" ]]; then
-            source ${bash_config_path}/bashrc.banyu-ubuntu
+        if [[ $container_name == *"banyu"* ]]; then
+            source ${bash_config_path}/bashrc.ros-banyu
         else
             source ${bash_config_path}/bashrc.base
         fi

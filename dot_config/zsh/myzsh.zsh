@@ -17,10 +17,6 @@ if (( $+commands[batman] )); then
     alias man=batman
 fi
 
-if (( $+commands[fvm] )); then
-    export PATH="$HOME/.local/share/fvm/default/bin:$PATH"
-fi
-
 if (( $+commands[starship] )); then
     eval "$(starship init zsh)"
 fi

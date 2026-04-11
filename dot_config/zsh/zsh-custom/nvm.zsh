@@ -1,3 +1,3 @@
 if [ -n $NVM_BIN ]; then
-    export PATH="$NVM_BIN:$PATH"
+    export PATH="$PATH:$NVM_BIN"
 fi
