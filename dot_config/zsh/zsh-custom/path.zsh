@@ -31,7 +31,6 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR='nvim'
 
 export VCPKG_ROOT="$HOME/.local/share/vcpkg"
+export VCPKG_TOOLCHAIN="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
 
 export GOPATH="$HOME/.local/share/go"
-
-
