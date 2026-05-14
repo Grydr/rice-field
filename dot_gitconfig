@@ -23,7 +23,10 @@
 
 [init]
 	defaultBranch = main
+
 [credential]
 	helper = cache
 [pull]
-	rebase = true
+	ff = only
+[alias]
+	whenadded = log --diff-filter=A

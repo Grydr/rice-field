@@ -2,22 +2,15 @@ if [[ -z "$ZSH_CUSTOM" ]]; then
   export ZSH_CUSTOM=~/.config/zsh/zsh-custom
 fi
 
-for config_file (${ZSH_CUSTOM}/*.zsh); do
-  source "$config_file"
-done
-unset config_file
-
 if command -v mise >/dev/null; then
     eval "$(mise activate zsh)"
     eval "$(mise completion zsh)"
 fi
 
-if command -v nvm >/dev/null; then
-    if [[ -d "/usr/share/nvm" ]]; then
-        source /usr/share/nvm/init-nvm.sh
-    elif [[ -d "$HOME/.nvm" ]]; then
-        source $HOME/.nvm/nvm.sh
-    fi
+if [[ -d "$HOME/.nvm" ]]; then
+    source $HOME/.nvm/nvm.sh
+elif [[ -d "/usr/share/nvm" ]]; then
+    source /usr/share/nvm/init-nvm.sh
 fi
 
 if (( $+commands[batman] )); then
@@ -39,3 +32,8 @@ fi
 if (( $+commands[catnap] )); then
     catnap
 fi
+
+for config_file (${ZSH_CUSTOM}/*.zsh); do
+  source "$config_file"
+done
+unset config_file
