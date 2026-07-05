@@ -34,3 +34,5 @@ alias lg='lazygit'
 
 alias chmod='chmod --preserve-root'
 alias chown='chown --preserve-root'
+
+alias zshtime='time ZSH_DEBUGRC=1 zsh -i -c exit'

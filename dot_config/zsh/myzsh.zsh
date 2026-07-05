@@ -22,17 +22,6 @@ if (( $+commands[starship] )); then
     eval "$(starship completions zsh)"
 fi
 
-# Check if tmux server is running
-if command -v tmux >/dev/null; then
-    if [[ $(pgrep -c tmux) != 0 ]]; then
-        tmux source ~/.config/tmux/tmux.conf
-    fi
-fi
-
-if (( $+commands[catnap] )); then
-    catnap
-fi
-
 for config_file (${ZSH_CUSTOM}/*.zsh); do
   source "$config_file"
 done

@@ -1,3 +1,7 @@
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zmodload zsh/zprof
+fi
+
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
@@ -140,3 +144,7 @@ SAVEHIST=30000
 # End of lines configured by zsh-newuser-install
 
 source ~/.config/zsh/myzsh.zsh
+
+if [ -n "${ZSH_DEBUGRC+1}" ]; then
+    zprof
+fi
