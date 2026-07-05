@@ -1,7 +1,6 @@
 if [ -n "${ZSH_DEBUGRC+1}" ]; then
     zmodload zsh/zprof
 fi
-
 # Start configuration added by Zim install {{{
 #
 # User configuration sourced by interactive shells
@@ -57,7 +56,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 #
 
 # Append `../` to your input for each `.` you type after an initial `..`
-#zstyle ':zim:input' double-dot-expand yes
+zstyle ':zim:input' double-dot-expand yes
 
 #
 # termtitle

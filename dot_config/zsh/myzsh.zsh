@@ -7,12 +7,6 @@ if command -v mise >/dev/null; then
     eval "$(mise completion zsh)"
 fi
 
-if [[ -d "$HOME/.nvm" ]]; then
-    source $HOME/.nvm/nvm.sh
-elif [[ -d "/usr/share/nvm" ]]; then
-    source /usr/share/nvm/init-nvm.sh
-fi
-
 if (( $+commands[batman] )); then
     alias man=batman
 fi

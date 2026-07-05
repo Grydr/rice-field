@@ -58,3 +58,4 @@ zmodule ohmyzsh/ohmyzsh --root plugins/sudo
 zmodule kiesman99/zim-zoxide
 zmodule exa
 zmodule fzf
+zmodule lukechilds/zsh-nvm
