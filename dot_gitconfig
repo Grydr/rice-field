@@ -30,3 +30,5 @@
 	ff = only
 [alias]
 	whenadded = log --diff-filter=A
+[fetch]
+	prune = true
