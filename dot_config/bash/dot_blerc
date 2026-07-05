@@ -14,3 +14,7 @@ ble-bind -m vi_imap -f 'C-m' accept-line
 ble-bind -m vi_imap -f 'RET' accept-line
 ble-bind -m vi_nmap -f 'C-m' accept-line
 ble-bind -m vi_nmap -f 'RET' accept-line
+
+# fzf integration
+ble-import -d integration/fzf-completion
+ble-import -d integration/fzf-key-bindings

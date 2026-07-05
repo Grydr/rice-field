@@ -1,11 +1,11 @@
 export SHELL=$(which bash)
 export USER=$(id -un)
 
-export QT_QPA_PLATFORM=xcb
 export XDG_RUNTIME_DIR=/run/user/1000
 export VCPKG_TOOLCHAIN="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
 
 alias srcbash="source ~/.bashrc"
+alias ..="cd .."
 alias la="ls -a"
 alias ll="ls -l"
 alias lah="ls -lah"

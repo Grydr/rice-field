@@ -1,0 +1,24 @@
+[tools]
+bat = "latest"
+eza = "latest"
+ripgrep = "latest"
+bat-extras = "latest"
+fzf = "latest"
+starship = "latest"
+zoxide = "latest"
+fd = "latest"
+delta = "latest"
+yazi = "latest"
+usage = "latest"
+lazygit = "latest"
+"github:tealdeer-rs/tealdeer" = "latest"
+topgrade = "latest"
+uv = "latest"
+codex = "latest"
+
+[tool_alias]
+tldr = "github:tealdeer-rs/tealdeer"
+
+[shell_alias]
+tldr = "tealdeer"
+lg = "lazygit"
