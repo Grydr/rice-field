@@ -2,7 +2,8 @@ BasedOnStyle: "Google"
 IndentWidth: 4
 ColumnLimit: 120
 AccessModifierOffset: -4
-SpacesInBracedLists: true
+Cpp11BracedListStyle: Block
+SpaceBeforeCpp11BracedList: true
 
 # Force pointers to the type
 DerivePointerAlignment: false
