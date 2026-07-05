@@ -16,6 +16,10 @@ if (( $+commands[starship] )); then
     eval "$(starship completions zsh)"
 fi
 
+if command -v fastfetch >/dev/null; then
+    fastfetch
+fi
+
 for config_file (${ZSH_CUSTOM}/*.zsh); do
   source "$config_file"
 done
