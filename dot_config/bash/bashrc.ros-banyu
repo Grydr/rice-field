@@ -33,18 +33,28 @@ fi
 export NVM_DIR="$XDG_DATA_HOME/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+if command -v ccache >/dev/null; then
+    export CMAKE_CXX_COMPILER_LAUNCHER=ccache
+fi
+
 source /opt/ros/humble/setup.bash
 
 source /home/gryd/.local/share/vcpkg/scripts/vcpkg_completion.bash
 
-if [[ -d $HOME/Sources/ardupilot ]]; then
-    source /home/gryd/Sources/ardupilot/Tools/completion/completion.bash
+ardupilot_ws_dir="$HOME/Dev/ardupilot_ws"
+if [[ -d $ardupilot_ws_dir/ardupilot ]]; then
+    source $HOME/Dev/ardupilot_ws/ardupilot/Tools/completion/completion.bash
 fi
 
-if [[ -d $HOME/Sources/ardupilot_gazebo ]]; then
-    ardupilot_gazebo_dir=$HOME/Sources/ardupilot_gazebo
-    export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=${ardupilot_gazebo_dir}/build:$IGN_GAZEBO_SYSTEM_PLUGIN_PATH
-    export IGN_GAZEBO_RESOURCE_PATH=${ardupilot_gazebo_dir}/models:${ardupilot_gazebo_dir}/worlds:$IGN_GAZEBO_RESOURCE_PATH
+if [[ -d $ardupilot_ws_dir/ardupilot_gazebo ]]; then
+    ardupilot_gazebo_dir=$ardupilot_ws_dir/ardupilot_gazebo
+    if [[ $GZ_VERSION == "fortress" ]]; then
+    	export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=${ardupilot_gazebo_dir}/build:$IGN_GAZEBO_SYSTEM_PLUGIN_PATH
+    	export IGN_GAZEBO_RESOURCE_PATH=${ardupilot_gazebo_dir}/models:${ardupilot_gazebo_dir}/worlds:$IGN_GAZEBO_RESOURCE_PATH
+    else
+    	export GZ_SIM_SYSTEM_PLUGIN_PATH=${ardupilot_gazebo_dir}/build:$GZ_SIM_SYSTEM_PLUGIN_PATH
+    	export GZ_SIM_RESOURCE_PATH=${ardupilot_gazebo_dir}/models:${ardupilot_gazebo_dir}/worlds:$GZ_SIM_RESOURCE_PATH
+    fi
 fi
 
 source -- ~/.local/share/blesh/ble.sh
