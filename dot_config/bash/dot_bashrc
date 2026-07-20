@@ -4,7 +4,7 @@ export USER=$(id -un)
 export XDG_RUNTIME_DIR=/run/user/1000
 export VCPKG_TOOLCHAIN="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
 
-alias srcbash="source ~/.bash_profile"
+alias srcbash="exec bash"
 alias ..="cd .."
 alias la="ls -a"
 alias ll="ls -l"
@@ -24,4 +24,3 @@ if [ -n "$BASH_VERSION" ]; then
 
     source ${bash_config_path}/bashrc.base
 fi
-source "/home/gryd/Dev/ardupilot_ws/ardupilot/Tools/completion/completion.bash"

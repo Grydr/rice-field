@@ -25,10 +25,10 @@ setopt HIST_IGNORE_ALL_DUPS
 bindkey -e
 
 # Prompt for spelling correction of commands.
-#setopt CORRECT
+setopt CORRECT
 
 # Customize spelling correction prompt.
-#SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
+SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
 
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
@@ -113,6 +113,12 @@ if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
   source ${ZIM_HOME}/zimfw.zsh init -q
 fi
 # Initialize modules.
+autoload -U bashcompinit
+bashcompinit
+
+# GLOBDOTS lets files beginning with a . be matched without explicitly specifying the dot.
+setopt globdots
+
 source ${ZIM_HOME}/init.zsh
 
 # ------------------------------

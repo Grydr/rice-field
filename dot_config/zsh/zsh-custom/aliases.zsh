@@ -17,6 +17,10 @@ if command -v eza >/dev/null; then
     alias lah='ls -lah --links --inode'
 fi
 
+if (( $+commands[batman] )); then
+    alias man=batman
+fi
+
 alias gcc='gcc -Wall -Wextra -Wshadow -Wcast-align -Wconversion -Wuninitialized -Winit-self -fsanitize={address,undefined}'
 alias g++='g++ -Wall -Wextra -Wshadow -Wcast-align -Wconversion -Wuninitialized -Winit-self -fsanitize={address,undefined}'
 

@@ -7,10 +7,6 @@ if command -v mise >/dev/null; then
     eval "$(mise completion zsh)"
 fi
 
-if (( $+commands[batman] )); then
-    alias man=batman
-fi
-
 if (( $+commands[starship] )); then
     eval "$(starship init zsh)"
     eval "$(starship completions zsh)"
